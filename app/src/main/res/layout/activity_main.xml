@@ -22,23 +22,17 @@
            android:layout_height="wrap_content"
           android:src="@drawable/ic_circle_check_solid"/>
        <LinearLayout
-           android:id="@+id/show_all_lists"
+
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:orientation="horizontal">
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="@string/txt_all_lists"
-               android:textSize="@dimen/_15sdp"
-               android:textStyle="bold"
-               android:layout_margin="@dimen/_12sdp"/>
-           <androidx.appcompat.widget.AppCompatImageView
-               android:layout_marginStart="@dimen/_10sdp"
-               android:layout_marginTop="@dimen/_18sdp"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/ic_caret_down_solid"/>
+
+          <Spinner
+              android:id="@+id/show_all_lists"
+              android:layout_width="wrap_content"
+              android:layout_marginStart="@dimen/_20sdp"
+              android:layout_height="wrap_content" />
+
        </LinearLayout>
            
      </androidx.appcompat.widget.Toolbar>

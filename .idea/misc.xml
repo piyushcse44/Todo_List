@@ -12,6 +12,8 @@
         <entry key="app/src/main/res/drawable/ic_microphone_solid.xml" value="0.298" />
         <entry key="app/src/main/res/drawable/ic_square_check_solid.xml" value="0.298" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2833333333333333" />
+        <entry key="app/src/main/res/layout/new_list.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/spinner_layout.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/menu/home_menu.xml" value="0.2984375" />
       </map>
     </option>

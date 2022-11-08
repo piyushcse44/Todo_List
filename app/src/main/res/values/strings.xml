@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name"> </string>
     <string name="txt_all_lists">All Lists</string>
     <string name="menu_task_lists">Task Lists</string>
@@ -11,4 +11,9 @@
     <string name="invite">Invite friend to the app</string>
     <string name="setting">Setting</string>
     <string name="Nt_to_do">Nothing to do</string>
+    <string name="spinner_image">Spinner_image</string>
+    <string name="Add_dialog_Title">New List</string>
+    <string name="dialog_editText">Enter List Name</string>
+    <string name="add_in_dialog">ADD</string>
+    <string name="cancel_dialog" tools:ignore="ButtonCase">CANCEL</string>
 </resources>
