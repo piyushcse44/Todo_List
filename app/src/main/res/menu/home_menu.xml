@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item android:id="@+id/search_bar"
+      android:icon="@drawable/ic_magnifying_glass_solid"
+      android:title="@string/search_bar"
+      app:showAsAction="ifRoom" />
+    <item android:id="@+id/task_lists"
+       android:title="@string/menu_task_lists"
+        app:showAsAction="collapseActionView"/>
+  <item android:id="@+id/add_bth_md"
+      android:title="@string/add_bth_md"
+      app:showAsAction="never"/>
+  <item android:id="@+id/Add_rmv"
+      android:title="@string/ad_rmv"
+      app:showAsAction="never"/>
+  <item android:id="@+id/app_more"
+      android:title="@string/more_app"
+      app:showAsAction="never"/>
+  <item android:id="@+id/send_fb"
+      android:title="@string/Sd_fb"
+      app:showAsAction="never"/>
+  <item android:id="@+id/Follow_Us"
+      android:title="@string/fw_us"
+      app:showAsAction="never"/>
+  <item android:id="@+id/Invite"
+      android:title="@string/invite"
+      app:showAsAction="never"/>
+  <item android:title="@string/setting"
+    android:id="@+id/setting"
+    app:showAsAction="never"/>
+
+
+</menu>
