@@ -3,6 +3,7 @@ package com.example.todo_list;
 import android.app.Dialog;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
    LinearLayout all_list_ll;
    TextView all_list_tv;
    ArrayList<Store_spinner_element> spinner_list = new ArrayList<>();
+   final int[] cur_Task_Pos ={0};
+
 
 
 
@@ -55,7 +58,12 @@ public class MainActivity extends AppCompatActivity {
        show_all_list.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
            @Override
            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-               all_list_tv.setText(spinner_list.get(position).spinner_name);
+
+
+                   all_list_tv.setText(spinner_list.get(position).spinner_name);
+                   cur_Task_Pos[0] = position;
+
+               Log.d("piyush1", "onItemSelected: "+position);
                if(position==7)
                {
                    Dialog dialog = new Dialog(MainActivity.this);
@@ -75,10 +83,12 @@ public class MainActivity extends AppCompatActivity {
                        {
                            Store_spinner_element store_spinner_element = new Store_spinner_element(R.drawable.ic_bars_solid,new_list_name);
                            spinner_list.add(store_spinner_element);
+                           Toast.makeText(MainActivity.this, "List Added", Toast.LENGTH_SHORT).show();
                            adaptor.notifyDataSetChanged();
-                           Toast.makeText(MainActivity.this, "List added", Toast.LENGTH_SHORT).show();
+                           show_all_list.setAdapter(adaptor);
                            all_list_tv.setText(new_list_name);
                            dialog.dismiss();
+
 
 
                        }
@@ -117,10 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void spinner_add_element()
     {
-        all_list_ll.setOnClickListener(v -> {
-            Toast.makeText(MainActivity.this, "yes", Toast.LENGTH_SHORT).show();
-            show_all_list.performClick();
-        });
+        all_list_ll.setOnClickListener(v -> show_all_list.performClick());
           final int [] spinner_img = new int[8];
           spinner_img[0]=R.drawable.ic_house_solid;
           for(int i=1;i<=7;i++) {

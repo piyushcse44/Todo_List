@@ -36,7 +36,7 @@
                android:text="@string/txt_all_lists"
                android:textSize="@dimen/_15sdp"
                android:textStyle="bold"
-               android:maxWidth="@dimen/_100sdp"
+               android:maxWidth="@dimen/_120sdp"
                android:maxHeight="@dimen/_20sdp"
                android:layout_marginStart="@dimen/_20sdp"/>
               <ImageView
