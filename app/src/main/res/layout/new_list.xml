@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -23,15 +24,16 @@
         android:layout_width="@dimen/_270sdp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:autofillHints="name"
         android:hint="@string/dialog_editText"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColor="@color/purple_700"
         android:textColorHint="#757575"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dialog_title"
-        android:autofillHints="name"
-        android:inputType="textPersonName"
-        android:layout_marginTop="@dimen/_20sdp"/>
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
 
 
     <TextView
@@ -50,6 +52,7 @@
     <TextView
         android:id="@+id/cancel_txt_dialog"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:text="@string/cancel_dialog"
         android:background="#fff"
@@ -59,7 +62,8 @@
         app:layout_constraintEnd_toStartOf="@+id/add_txt_dialog"
         android:layout_marginTop="@dimen/_40sdp"
         android:paddingBottom="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"/>
+        android:layout_marginEnd="@dimen/_20sdp"
+        tools:ignore="OnClick,UsingOnClickInXml" />
 
 
 

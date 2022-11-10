@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Toolbar_color">#5168F3</color>
     <color name="Background_home">#E600008B</color>
+    <color name="Title_color">#5C23CF</color>
 </resources>
